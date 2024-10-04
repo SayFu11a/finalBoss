@@ -1,0 +1,12 @@
+.types-item {
+  // display: block !important;
+  height: 180px !important;
+  flex-direction: column;
+  // justify-content: start;
+  align-items: end !important;
+  text-align: left !important;
+}
+
+.types-item__text {
+  align-self: start;
+}
