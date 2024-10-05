@@ -1,0 +1,25 @@
+.footer-page {
+  background-color: rgba(248, 248, 248, 1);
+}
+
+.footer-page__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  padding: 50px 33px 21px 31px;
+}
+
+.footer-page__team {
+  max-width: 218px;
+  text-align: left;
+}
+
+.footer-page__polisy {
+  max-width: 214px;
+}
+.footer-page__info {
+  text-align: right;
+  max-width: 330px;
+}

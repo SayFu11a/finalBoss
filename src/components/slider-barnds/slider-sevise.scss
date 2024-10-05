@@ -1,0 +1,231 @@
+@media (max-width: 500px) {
+  .button__wraper {
+    display: none;
+  }
+}
+
+@media (min-width: 840px) {
+  .servise-slider__wrapper .brands__item {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 500px) {
+  .servise-slider__wrapper .brands__item {
+    width: 100% !important;
+  }
+
+  .servise-slider__wrapper {
+    display: block;
+  }
+
+  .swiper-slide.brands__item.item.servise-item {
+    // display: block;
+    width: 100% !important;
+  }
+
+  .servise-slider__container {
+    width: 100%;
+  }
+}
+
+.servise-btn__wrapper {
+}
+.servise-item {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  display: flex;
+
+  justify-content: space-between;
+  display: grid !important;
+  grid-template-columns: minmax(20%, 50%) 1fr 1fr min-content;
+  justify-items: stretch;
+}
+
+.servise-item__prise {
+  // margin-left: auto;
+}
+
+.servise-item__time {
+  // margin-left: auto;
+}
+
+.servise-item__btn {
+  // margin-left: auto;
+
+  display: flex;
+  width: 119px;
+  height: 32px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  // padding-top: auto;
+
+  border-radius: 16px;
+  background-color: rgba(255, 62, 121, 1);
+  color: white;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.servise-item__btn--arrow {
+  display: inline-block;
+  background: url('../img/slider-brands/arrow01.png') no-repeat;
+  width: 7px;
+  height: 9.63px;
+}
+
+.servise-item__btn--text {
+  font-family: 'TT LakesBold';
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15000000596046448px;
+  text-transform: uppercase;
+  // text-align: right;
+  // margin-right: auto;
+}
+
+.servise-item__text {
+  // width: 490px;
+  // margin-right:;
+}
+
+// @media (max-width: 726px) {
+//   .servise-item {
+//     font-size: 12px;
+//     line-height: 18px;
+//     letter-spacing: 0.10000000298023224px;
+//     text-align: left;
+//   }
+// }
+
+@media (max-width: 686px) {
+  .servise-item__time {
+    display: none;
+  }
+}
+
+.btn-text-wrap {
+  display: none;
+}
+
+.back-color {
+  padding-top: 30px;
+}
+
+@media (max-width: 500px) {
+  .back-color {
+    padding-top: 0;
+  }
+
+  .servise-item {
+    height: 260px !important;
+    grid-template-areas: 'text text text' 'prise prise prise' 'time btn btn';
+  }
+
+  .servise-item__text {
+    grid-area: text;
+    position: relative;
+  }
+  .servise-item__prise {
+    position: relative;
+    grid-area: prise;
+  }
+  .servise-item__time {
+    grid-area: time;
+    position: relative;
+
+    display: block;
+  }
+  .servise-item__btn {
+    grid-area: btn;
+    position: relative;
+    left: 5px;
+  }
+
+  .btn-text-wrap {
+    display: block;
+  }
+
+  .servise-item__text::before,
+  .servise-item__time::before,
+  .servise-item__prise::before {
+    content: 'Ремонтные услуги';
+    position: absolute;
+    top: -20px;
+    color: rgba(126, 126, 130, 1);
+    opacity: 0.72;
+  }
+
+  .servise-item__time::before {
+    content: 'Срок';
+  }
+  .servise-item__prise::before {
+    content: 'Цена';
+  }
+
+  .servise-info--btn {
+    margin-right: 30px;
+    text-align: left;
+  }
+
+  .servise-info p {
+    margin-right: 30px;
+  }
+}
+
+.servise-item:first-child > .servise-item__text::before,
+.servise-item:first-child > .servise-item__time::before,
+.servise-item:first-child > .servise-item__prise::before {
+  content: 'Ремонтные услуги';
+  position: absolute;
+  top: -30px;
+  color: rgba(126, 126, 130, 1);
+  opacity: 0.72;
+}
+
+.servise-item:first-child > .servise-item__time::before {
+  content: 'Срок';
+}
+.servise-item:first-child > .servise-item__prise::before {
+  content: 'Цена';
+}
+
+.servise-info {
+  margin-left: 38px;
+}
+
+.servise-info p {
+  max-width: 421px;
+
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.servise-info--btn::after {
+  content: ' ';
+  background: url('../img/slider-brands/arrow2.png') no-repeat;
+  height: 10px;
+  width: 6px;
+
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  left: 9.4px;
+}
+
+.servise-info--btn {
+  cursor: pointer;
+  margin-left: -6px;
+}
+
+@media (max-width: 500px) {
+  .servise-info p {
+    margin-right: 16px;
+  }
+}
