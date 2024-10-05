@@ -70,6 +70,11 @@
   padding-right: 8px;
 }
 
+.servise-item__btn:hover {
+  background-color: rgba(255, 62, 121, 0.8);
+  cursor: pointer;
+}
+
 .servise-item__btn--arrow {
   display: inline-block;
   background: url('../img/slider-brands/arrow01.png') no-repeat;
@@ -228,4 +233,8 @@
   .servise-info p {
     margin-right: 16px;
   }
+}
+
+.servise-slider__container {
+  padding-right: 45px;
 }

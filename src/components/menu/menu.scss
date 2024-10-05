@@ -437,3 +437,13 @@ p {
       -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
   }
 }
+
+@media (max-width: 360px) {
+  .l-menu-block {
+    min-width: 100% !important;
+  }
+}
+
+.menu-logo__img {
+  cursor: pointer;
+}

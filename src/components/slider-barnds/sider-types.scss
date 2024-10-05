@@ -10,3 +10,9 @@
 .types-item__text {
   align-self: start;
 }
+
+@media (min-width: 500px) {
+  .display-none-desc {
+    display: none !important;
+  }
+}

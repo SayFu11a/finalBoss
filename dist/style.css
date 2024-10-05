@@ -242,6 +242,18 @@ body {
 .display-none {
   display: none; }
 
+body {
+  background-color: #f8f8f8; }
+
+.header {
+  background-color: #f8f8f8; }
+
+.wrapper {
+  background-color: #f8f8f8; }
+
+.header__logo {
+  cursor: pointer; }
+
 .header__wrapper {
   padding: 18px 16px;
   display: flex;
@@ -257,7 +269,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  cursor: pointer; }
+
+.icon:hover {
+  opacity: 0.7; }
 
 .header__logo {
   margin-right: 15px; }
@@ -359,7 +375,8 @@ h1::before {
   padding: 5px 15px;
   height: 40px;
   font-size: 16px;
-  border: solid 2px rgba(184, 255, 236, 0); }
+  border: solid 2px rgba(184, 255, 236, 0);
+  background-color: #f8f8f8 !important; }
 
 .services-tabs__item_active:hover {
   border: solid 2px #b8ffec;
@@ -702,6 +719,9 @@ body {
 
 .brands__button {
   position: relative; }
+
+.brands__button {
+  cursor: pointer; }
 
 .swiper-slide .brands__item {
   /* width: 240px; */
@@ -1204,6 +1224,13 @@ p {
   .l-menu-block {
     box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2), -2px 0px 4px 0px rgba(69, 79, 126, 0.02); } }
 
+@media (max-width: 360px) {
+  .l-menu-block {
+    min-width: 100% !important; } }
+
+.menu-logo__img {
+  cursor: pointer; }
+
 .types-item {
   height: 180px !important;
   flex-direction: column;
@@ -1212,6 +1239,10 @@ p {
 
 .types-item__text {
   align-self: start; }
+
+@media (min-width: 500px) {
+  .display-none-desc {
+    display: none !important; } }
 
 @media (max-width: 500px) {
   .button__wraper {
@@ -1255,6 +1286,10 @@ p {
   color: white;
   padding-left: 8px;
   padding-right: 8px; }
+
+.servise-item__btn:hover {
+  background-color: rgba(255, 62, 121, 0.8);
+  cursor: pointer; }
 
 .servise-item__btn--arrow {
   display: inline-block;
@@ -1363,6 +1398,9 @@ p {
   .servise-info p {
     margin-right: 16px; } }
 
+.servise-slider__container {
+  padding-right: 45px; }
+
 .footer-page {
   background-color: #f8f8f8; }
 
@@ -1379,11 +1417,29 @@ p {
   text-align: left; }
 
 .footer-page__polisy {
-  max-width: 214px; }
+  max-width: 214px;
+  text-align: left; }
 
 .footer-page__info {
   text-align: right;
   max-width: 330px; }
+
+@media (max-width: 874px) {
+  .footer-page__wrapper {
+    font-size: 12px; } }
+
+@media (max-width: 500px) {
+  .footer-page__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .footer-page__team,
+  .footer-page__polisy,
+  .footer-page__info {
+    text-align: center;
+    margin-bottom: 16px; }
+  .footer-page__info {
+    margin-bottom: 0; } }
 
 
 /*# sourceMappingURL=style.css.map*/
