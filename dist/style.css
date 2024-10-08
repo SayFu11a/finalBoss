@@ -617,6 +617,22 @@ body {
     top: 20px;
     z-index: 1; } }
 
+.tupes__flex-wrapper {
+  flex-wrap: wrap !important; }
+
+@media (min-width: 500px) {
+  .types__conteiner {
+    max-height: 190px !important; } }
+
+.main-text {
+  max-height: 140px;
+  overflow: hidden;
+  transition: max-height 1s; }
+
+.show-text {
+  max-height: 400px;
+  transition: max-height 1s; }
+
 @font-face {
   font-family: 'TT Lakes-Regular';
   src: url(./fonts/TTLakes-Regular.eot);
@@ -1243,6 +1259,16 @@ p {
 @media (min-width: 500px) {
   .display-none-desc {
     display: none !important; } }
+
+@media (min-width: 500px) {
+  .show-types {
+    max-height: 850px !important;
+    transition: max-height 1s; } }
+
+@media (min-width: 500px) and (max-width: 751px) {
+  .show-types {
+    max-height: 970px !important;
+    transition: max-height 1s; } }
 
 @media (max-width: 500px) {
   .button__wraper {

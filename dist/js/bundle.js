@@ -138,6 +138,11 @@ if (window.screen.width <= 500) {
   wrapper.classList.add('flex-conteiner');
   var swiperW = document.querySelector('.swiper-container');
   swiperW.classList.remove('swiper-container');
+  var typeWrapper = document.querySelector('.types__swiper-wrapper');
+  typeWrapper.classList.remove('swiper-wrapper');
+  typeWrapper.classList.add('flex-conteiner');
+  var typesSwiperC = document.querySelector('.types__swiper-container');
+  typesSwiperC.classList.remove('swiper-container');
 }
 
 var show = bottom.querySelector('.button__show-more');
@@ -178,6 +183,29 @@ menuBurgerH.addEventListener('click', function () {
 menuOverlay.addEventListener('click', function () {
   menuParant.classList.toggle('menu-trans');
   menuOverlay.classList.remove('d-block');
+}); // = types
+// let arrowRotate = bottom.querySelector('.button__img')
+
+var typeBtn = document.querySelector('.types__btn');
+var typesCon = document.querySelector('.types__conteiner');
+typeBtn.addEventListener('click', function () {
+  typesCon.classList.toggle('show-types');
+});
+var readMoreBtn = document.querySelector('.read-more');
+var mainText = document.querySelector('.main-text');
+var readMoreBtnText = readMoreBtn.querySelector('.read-more__text');
+readMoreBtn.addEventListener('click', function () {
+  mainText.classList.toggle('show-text');
+
+  if (mainText.classList.contains('show-text')) {
+    setTimeout(function () {
+      readMoreBtnText.innerText = 'скрыть';
+    }, 300);
+  } else {
+    setTimeout(function () {
+      readMoreBtnText.innerText = 'Читать далее';
+    }, 500);
+  }
 });
 
 /***/ }),

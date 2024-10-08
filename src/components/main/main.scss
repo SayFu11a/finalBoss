@@ -564,3 +564,24 @@ body {
     z-index: 1;
   }
 }
+
+.tupes__flex-wrapper {
+  flex-wrap: wrap !important;
+}
+
+@media (min-width: 500px) {
+  .types__conteiner {
+    max-height: 190px !important;
+  }
+}
+
+.main-text {
+  max-height: 140px;
+  overflow: hidden;
+  transition: max-height 1s;
+}
+
+.show-text {
+  max-height: 400px;
+  transition: max-height 1s;
+}

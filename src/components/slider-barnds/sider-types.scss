@@ -16,3 +16,17 @@
     display: none !important;
   }
 }
+
+@media (min-width: 500px) {
+  .show-types {
+    max-height: 850px !important;
+    transition: max-height 1s;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 751px) {
+  .show-types {
+    max-height: 970px !important;
+    transition: max-height 1s;
+  }
+}
